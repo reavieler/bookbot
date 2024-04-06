@@ -31,13 +31,13 @@ def count_words(file_contents):
         count += 1
     return count
 
-def book_report():
+def book_report_start():
     print("--- Begin report of books/frankenstein.txt")
 
 
 
 def main():
-    print("--- Begin report of books/frankenstein.txt")
+    book_report_start()
     with open("books/frankenstein.txt") as f:
         file_contents = f.read() 
     word_count = count_words(file_contents) 
